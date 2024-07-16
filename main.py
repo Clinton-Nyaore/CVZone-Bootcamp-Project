@@ -189,13 +189,13 @@ st.markdown("""
 # Introduction with increased font size, line breaks, and spaces
 st.markdown("""
     <div style='font-size: 18px; line-height: 1.6;'>
-        <h5>Welcome to <b>Clinton's Pen Monitoring System</b>. This application is designed to help farmers easily monitor 
+        <h6>Welcome to <b>Clinton's Pen Monitoring System</b>. This application is designed to help farmers easily monitor 
         the health and activity of their animals. By using this system, you can get real-time updates from your 
-        livestock pen, including a live stream of the pen and analysis of the animals' behavior and health metrics.</h5>
+        livestock pen, including a live stream of the pen and analysis of the animals' behavior and health metrics.</h6>
     </div>
     """, unsafe_allow_html=True)
 
-st.title("Features")
+st.subheader("Features")
 st.markdown("""
 
     <div style='font-size: 18px; line-height: 1.6;'>
@@ -207,9 +207,9 @@ st.markdown("""
         </ul>
     </div>
     <div style='font-size: 16px;'>
-        <h5>This tool aims to provide farmers with a comprehensive solution to ensure the wellbeing of their animals 
-        and optimize farm operations.</h5>
-        <h5>Click the checkboxes below to view the pen livestream and analysis.</h5>
+        <h6>This tool aims to provide farmers with a comprehensive solution to ensure the wellbeing of their animals 
+        and optimize farm operations.</h6>
+        <h6>Click the checkboxes below to view the pen livestream and analysis.</h6>
     </div>
     <br>
     """, unsafe_allow_html=True)
@@ -245,14 +245,22 @@ else:
 
 
 # Add ChatGPT chatbot to answer animal health questions
-st.title("Clinton's Animals AI Bot")
-st.markdown("""<h5>Ask Clinton's Farm Monitoring System AI Bot any questions about the animals. It will provide you with the general answers. For now it has no access to the pen, so you just need to ask general questions.</h5>""", unsafe_allow_html=True)
+st.subheader("Clinton's Animals AI Bot")
+st.markdown("""<h6>Ask Clinton's Farm Monitoring System AI Bot any questions about the animals. It will provide you with the general answers. For now it has no access to the pen, so you just need to ask general questions.</h6>""", unsafe_allow_html=True)
 user_question = st.text_input("Ask anything about the animals")
 if st.button("ASK", use_container_width=400):
     response = assistant.g_chat(user_question)
     st.write(response)
 
-
+st.subheader("Clinton's Profile")
+st.write("- I am a machine learning engineer with a passion for AI and ML")
+st.write("- I have a background in computer science and statistics")
+st.write("- I am a certified machine learning engineer with 2 years experience")
+st.write("- LinkedIn: [Click link to LinkedIn profile](https://www.linkedin.com/in/clinton-nyaore-0a7590215/)")
+st.write("- GitHub: [Click link to GitHub](https://github.com/Clinton-Nyaore)")
+st.write("- Email: cnyaore@gmail.com")
+st.write("- Phone: +254 745 504 421")
+st.write("- WhatsApp: [Click link to Whatsapp](https://wa.me/254745504421?text=Hello%20am%20from%20cvzone%20bootcamp)")
 
 # Footer
 st.markdown("""
