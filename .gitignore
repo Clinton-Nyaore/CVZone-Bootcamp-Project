@@ -1,0 +1,21 @@
+# Environment folder
+.venv/
+.devcontainer/
+.env
+
+# IDE folder
+.idea/
+.vscode/
+
+# Compiled files
+*.pyc
+*.pyo
+
+# Logs
+*.log
+
+# Cache
+__pycache__/
+
+# API
+api
